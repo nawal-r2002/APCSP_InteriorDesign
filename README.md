@@ -1,8 +1,6 @@
 # APCSP_InteriorDesign
 Created an Interior Kitchen Design Application in JavaScript and HTML.
 
-Originally programmed using Code.org
-
 The files in the Interior Kitchen folder contain everything you need to run your app:
 
 * `applab/applab.css` - This file contains some default CSS styling.
