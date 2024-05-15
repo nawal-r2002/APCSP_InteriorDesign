@@ -2,79 +2,61 @@
 onEvent("Nextbutton","click", function(){
   setScreen("Color_Choices_Screen");
 });
-
 //When Home Buttons are clicked (Partner B)
 onEvent("Homebutton", "click", function(){
   setScreen("Welcome_Screen");
 });
-
 onEvent("Homebutton#2", "click", function(){
   setScreen("Welcome_Screen");
 });
-
 //When Other Buttons are clicked on Screens
 onEvent("HelpButton", "click", function() {
   setScreen("Help_Screen");
 });
-
 onEvent("MoreOptionsButton", "click", function() {
   setScreen("Stores_Screen");
 });
-
 //When Back Buttons are clicked (Partner A)
 onEvent("Backbutton#1", "click", function() {
   setScreen("Welcome_Screen");
 });
-
 onEvent("Backbutton#2", "click", function() {
   setScreen("Color_Choices_Screen");
 });
-
 onEvent("Backbutton#3", "click", function() {
   setScreen("Color_Choices_Screen");
 });
-
 onEvent("Backbutton#4", "click", function() {
   setScreen("Color_Choices_Screen");
 });
-
 onEvent("Backbutton#5", "click", function() {
   setScreen("Color_Choices_Screen");
 });
-
 onEvent("Backbutton#6", "click", function() {
   setScreen("Color_Choices_Screen");
 });
-
 onEvent("Backbutton#7", "click", function() {
   setScreen("Color_Choices_Screen");
 });
-
 //When Color Buttons are Clicked (Partner A)
 onEvent("ColorRed", "click", function() {
   setScreen("Interior_Design_Red_Screen");
 });
-
 onEvent("ColorHunterGreen", "click", function() {
   setScreen("Interior_Design_Green_Screen");
 });
-
 onEvent("ColorDarkBlue", "click", function() {
   setScreen("Interior_Design_Blue_Screen");
 });
-
 onEvent("ColorLightYellow", "click", function() {
   setScreen("Interior_Design_Yellow_Screen");
 });
-
 onEvent("ColorGrey", "click", function() {
   setScreen("Interior_Design_Grey_Screen");
 });
-
 onEvent("ColorLightPink", "click", function() {
   setScreen("Interior_Design_Pink_Screen");
 });
-
 //Setting of Interior Design Screen When Color Red is clicked (Partner B)
 function RedElementsHidden() {
   hideElement("Floor#1_Red");
@@ -87,7 +69,6 @@ function RedElementsHidden() {
   hideElement("CounterTops#1_Red");
   hideElement("CounterTops#2_Red");
 }
-
 function Image1Coordinates_Red(){
   var x1 = getXPosition("Floor#1_Red");
   var y1 = getYPosition("Floor#1_Red");
@@ -99,7 +80,6 @@ function Image1Coordinates_Red(){
     setPosition("Cabinets#1_Red", x1, y1);
   }
 }
-
 function Image2Coordinates_Red(){
   var x2 = getXPosition("Floor#2_Red");
   var y2 = getYPosition("Floor#2_Red");
@@ -111,7 +91,6 @@ function Image2Coordinates_Red(){
     setPosition("Cabinets#2_Red", x2, y2);
   }
 }
-
 onEvent("Interior_Dropdown#1", "change", function() {
   if(getText("Interior_Dropdown#1") == "Floor") {
     RedElementsHidden();
@@ -119,7 +98,6 @@ onEvent("Interior_Dropdown#1", "change", function() {
     showElement("Floor#2_Red");
   }
 });
-
 onEvent("Interior_Dropdown#1", "change", function() {
   if(getText("Interior_Dropdown#1") == "Wall Paint") {
     RedElementsHidden();
@@ -130,7 +108,6 @@ onEvent("Interior_Dropdown#1", "change", function() {
     Image2Coordinates_Red();
   }
 });
-
 onEvent("Interior_Dropdown#1", "change", function() {
   if(getText("Interior_Dropdown#1") == "Cabinets") {
     RedElementsHidden();
@@ -140,7 +117,6 @@ onEvent("Interior_Dropdown#1", "change", function() {
     Image2Coordinates_Red();
   }
 });
-
 onEvent("Interior_Dropdown#1", "change", function() {
   if(getText("Interior_Dropdown#1") == "Counter-Tops") {
     RedElementsHidden();
@@ -150,13 +126,11 @@ onEvent("Interior_Dropdown#1", "change", function() {
     Image2Coordinates_Red();
   }
 });
-
 onEvent("Interior_Dropdown#1", "change", function() {
   if(getText("Interior_Dropdown#1") == "Interior Design Options") {
     RedElementsHidden();
   }
 });
-
 //Setting of Interior Design Screen When Color Green is clicked (Partner B)
 function GreenElementsHidden() {
   hideElement("WallPaint#1_Green");
@@ -169,7 +143,6 @@ function GreenElementsHidden() {
   hideElement("Cabinets#1_Green");
   hideElement("Cabinets#2_Green");
 }
-
 function Image1Coordinates_Green(){
   var x1 = getXPosition("WallPaint#1_Green");
   var y1 = getYPosition("WallPaint#1_Green");
@@ -181,7 +154,6 @@ function Image1Coordinates_Green(){
     setPosition("Cabinets#1_Green", x1, y1);
   }
 }
-
 function Image2Coordinates_Green(){
   var x2 = getXPosition("WallPaint#2_Green");
   var y2 = getYPosition("WallPaint#2_Green");
@@ -193,7 +165,6 @@ function Image2Coordinates_Green(){
     setPosition("Cabinets#2_Green", x2, y2);
   }
 }
-
 onEvent("Interior_Dropdown#2", "change", function() {
   if(getText("Interior_Dropdown#2") == "Floor") {
     GreenElementsHidden();
@@ -203,7 +174,6 @@ onEvent("Interior_Dropdown#2", "change", function() {
     Image2Coordinates_Green();
   }
 });
-
 onEvent("Interior_Dropdown#2", "change", function() {
   if(getText("Interior_Dropdown#2") == "Wall Paint") {
     GreenElementsHidden();
@@ -211,7 +181,6 @@ onEvent("Interior_Dropdown#2", "change", function() {
     showElement("WallPaint#2_Green");
   }
 });
-
 onEvent("Interior_Dropdown#2", "change", function() {
   if(getText("Interior_Dropdown#2") == "Cabinets") {
     GreenElementsHidden();
@@ -221,7 +190,6 @@ onEvent("Interior_Dropdown#2", "change", function() {
     Image2Coordinates_Green();
   }
 });
-
 onEvent("Interior_Dropdown#2", "change", function() {
   if(getText("Interior_Dropdown#2") == "Counter-Tops") {
     GreenElementsHidden();
@@ -233,13 +201,11 @@ onEvent("Interior_Dropdown#2", "change", function() {
     setPosition("CounterTops#3_Green", 215, 80);
   }
 });
-
 onEvent("Interior_Dropdown#2", "change", function() {
   if(getText("Interior_Dropdown#2") == "Interior Design Options") {
     GreenElementsHidden();
   }
 });
-
 //Setting of Interior Design Screen When Color Blue is clicked (Partner B)
 function BlueElementsHidden() {
   hideElement("WallPaint#1_Blue");
@@ -251,7 +217,6 @@ function BlueElementsHidden() {
   hideElement("Floor#1_Blue");
   hideElement("Floor#2_Blue");
 }
-
 function Image1Coordinates_Blue(){
   var x1 = getXPosition("WallPaint#1_Blue");
   var y1 = getYPosition("WallPaint#1_Blue");
@@ -263,7 +228,6 @@ function Image1Coordinates_Blue(){
     setPosition("Cabinets#1_Blue", x1, y1);
   }
 }
-
 function Image2Coordinates_Blue(){
   var x2 = getXPosition("WallPaint#2_Blue");
   var y2 = getYPosition("WallPaint#2_Blue");
@@ -275,7 +239,6 @@ function Image2Coordinates_Blue(){
     setPosition("Cabinets#2_Blue", x2, y2);
   }
 }
-
 onEvent("Interior_Dropdown#3", "change", function() {
   if(getText("Interior_Dropdown#3") == "Floor") {
     BlueElementsHidden();
@@ -285,7 +248,6 @@ onEvent("Interior_Dropdown#3", "change", function() {
     Image2Coordinates_Blue();
   }
 });
-
 onEvent("Interior_Dropdown#3", "change", function() {
   if(getText("Interior_Dropdown#3") == "Wall Paint") {
     BlueElementsHidden();
@@ -293,7 +255,6 @@ onEvent("Interior_Dropdown#3", "change", function() {
     showElement("WallPaint#2_Blue");
   }
 });
-
 onEvent("Interior_Dropdown#3", "change", function() {
   if(getText("Interior_Dropdown#3") == "Cabinets") {
     BlueElementsHidden();
@@ -303,7 +264,6 @@ onEvent("Interior_Dropdown#3", "change", function() {
     Image2Coordinates_Blue();
   }
 });
-
 onEvent("Interior_Dropdown#3", "change", function() {
   if(getText("Interior_Dropdown#3") == "Counter-Tops") {
     BlueElementsHidden();
@@ -313,13 +273,11 @@ onEvent("Interior_Dropdown#3", "change", function() {
     Image2Coordinates_Blue();
   }
 });
-
 onEvent("Interior_Dropdown#3", "change", function() {
   if(getText("Interior_Dropdown#3") == "Interior Design Options") {
     BlueElementsHidden();
   }
 });
-
 //Setting of Interior Design Screen When Color Yellow is clicked (Partner A)
 function YellowElementsHidden() {
   hideElement("WallPaint#1_Yellow");
@@ -331,7 +289,6 @@ function YellowElementsHidden() {
   hideElement("Cabinets#1_Yellow");
   hideElement("Cabinets#2_Yellow");
 }
-
 function Image1Coordinates_Yellow(){
   var x1 = getXPosition("WallPaint#1_Yellow");
   var y1 = getYPosition("WallPaint#1_Yellow");
@@ -343,7 +300,6 @@ function Image1Coordinates_Yellow(){
     setPosition("Cabinets#1_Yellow", x1, y1);
   }
 }
-
 function Image2Coordinates_Yellow(){
   var x2 = getXPosition("WallPaint#2_Yellow");
   var y2 = getYPosition("WallPaint#2_Yellow");
@@ -355,7 +311,6 @@ function Image2Coordinates_Yellow(){
     setPosition("Cabinets#2_Yellow", x2, y2);
   }
 }
-
 onEvent("Interior_Dropdown#4", "change", function() {
   if(getText("Interior_Dropdown#4") == "Floor") {
     YellowElementsHidden();
@@ -365,7 +320,6 @@ onEvent("Interior_Dropdown#4", "change", function() {
     Image2Coordinates_Yellow();
   }
 });
-
 onEvent("Interior_Dropdown#4", "change", function() {
   if(getText("Interior_Dropdown#4") == "Wall Paint") {
     YellowElementsHidden();
@@ -373,7 +327,6 @@ onEvent("Interior_Dropdown#4", "change", function() {
     showElement("WallPaint#2_Yellow");
   }
 });
-
 onEvent("Interior_Dropdown#4", "change", function() {
   if(getText("Interior_Dropdown#4") == "Cabinets") {
     YellowElementsHidden();
@@ -383,7 +336,6 @@ onEvent("Interior_Dropdown#4", "change", function() {
     Image2Coordinates_Yellow();
   }
 });
-
 onEvent("Interior_Dropdown#4", "change", function() {
   if(getText("Interior_Dropdown#4") == "Counter-Tops") {
     YellowElementsHidden();
@@ -393,13 +345,11 @@ onEvent("Interior_Dropdown#4", "change", function() {
     Image2Coordinates_Yellow();
   }
 });
-
 onEvent("Interior_Dropdown#4", "change", function() {
   if(getText("Interior_Dropdown#4") == "Interior Design Options") {
     YellowElementsHidden();
   }
 });
-
 //Setting of Interior Design Screen When Color Grey is clicked (Partner A)
 function GreyElementsHidden() {
   hideElement("WallPaint#1_Grey");
@@ -411,7 +361,6 @@ function GreyElementsHidden() {
   hideElement("CounterTops#1_Grey");
   hideElement("CounterTops#2_Grey");
 }
-
 function Image1Coordinates_Grey(){
   var x1 = getXPosition("WallPaint#1_Grey");
   var y1 = getYPosition("WallPaint#1_Grey");
@@ -423,7 +372,6 @@ function Image1Coordinates_Grey(){
     setPosition("Cabinets#1_Grey", x1, y1);
   }
 }
-
 function Image2Coordinates_Grey(){
   var x2 = getXPosition("WallPaint#2_Grey");
   var y2 = getYPosition("WallPaint#2_Grey");
@@ -435,7 +383,6 @@ function Image2Coordinates_Grey(){
     setPosition("Cabinets#2_Grey", x2, y2);
   }
 }
-
 onEvent("Interior_Dropdown#5", "change", function() {
   if(getText("Interior_Dropdown#5") == "Floor") {
     GreyElementsHidden();
@@ -445,7 +392,6 @@ onEvent("Interior_Dropdown#5", "change", function() {
   Image2Coordinates_Grey();
   }
 });
-
 onEvent("Interior_Dropdown#5", "change", function() {
   if(getText("Interior_Dropdown#5") == "Wall Paint") {
     GreyElementsHidden();
@@ -453,7 +399,6 @@ onEvent("Interior_Dropdown#5", "change", function() {
     showElement("WallPaint#2_Grey");
   }
 });
-
 onEvent("Interior_Dropdown#5", "change", function() {
   if(getText("Interior_Dropdown#5") == "Cabinets") {
     GreyElementsHidden();
@@ -463,7 +408,6 @@ onEvent("Interior_Dropdown#5", "change", function() {
     Image2Coordinates_Grey();
   }
 });
-
 onEvent("Interior_Dropdown#5", "change", function() {
   if(getText("Interior_Dropdown#5") == "Counter-Tops") {
     GreyElementsHidden();
@@ -473,13 +417,11 @@ onEvent("Interior_Dropdown#5", "change", function() {
     Image2Coordinates_Grey();
   }
 });
-
 onEvent("Interior_Dropdown#5", "change", function() {
   if(getText("Interior_Dropdown#5") == "Interior Design Options") {
     GreyElementsHidden();
   }
 });
-
 //Setting of Interior Design Screen When Color Light Pink is clicked (Partner A)
 function LightPinkElementsHidden() {
   hideElement("WallPaint#1_Pink");
@@ -491,7 +433,6 @@ function LightPinkElementsHidden() {
   hideElement("CounterTops#3_Pink");
   hideElement("Floor#1_Pink");
 }
-
 function Image1Coordinates_Pink(){
   var x1 = getXPosition("WallPaint#1_Pink");
   var y1 = getYPosition("WallPaint#1_Pink");
@@ -503,7 +444,6 @@ function Image1Coordinates_Pink(){
     setPosition("Cabinets#1_Pink", x1, y1);
   }
 }
-
 function Image2Coordinates_Pink(){
   var x2 = getXPosition("WallPaint#2_Pink");
   var y2 = getYPosition("WallPaint#2_Pink");
@@ -513,7 +453,6 @@ function Image2Coordinates_Pink(){
     setPosition("Cabinets#2_Pink", x2, y2);
   }
 }
-
 onEvent("Interior_Dropdown#6", "change", function() {
   if(getText("Interior_Dropdown#6") == "Floor") {
     LightPinkElementsHidden();
@@ -521,7 +460,6 @@ onEvent("Interior_Dropdown#6", "change", function() {
     Image1Coordinates_Pink();
   }
 });
-
 onEvent("Interior_Dropdown#6", "change", function() {
   if(getText("Interior_Dropdown#6") == "Wall Paint") {
     LightPinkElementsHidden();
@@ -529,7 +467,6 @@ onEvent("Interior_Dropdown#6", "change", function() {
     showElement("WallPaint#2_Pink");
   }
 });
-
 onEvent("Interior_Dropdown#6", "change", function() {
   if(getText("Interior_Dropdown#6") == "Cabinets") {
     LightPinkElementsHidden();
@@ -539,7 +476,6 @@ onEvent("Interior_Dropdown#6", "change", function() {
     Image2Coordinates_Pink();
   }
 });
-
 onEvent("Interior_Dropdown#6", "change", function() {
   if(getText("Interior_Dropdown#6") == "Counter-Tops") {
     LightPinkElementsHidden();
@@ -551,7 +487,6 @@ onEvent("Interior_Dropdown#6", "change", function() {
     setPosition("CounterTops#3_Pink", 215, 80);
   }
 });
-
 onEvent("Interior_Dropdown#6", "change", function() {
   if(getText("Interior_Dropdown#6") == "Interior Design Options") {
     LightPinkElementsHidden();
